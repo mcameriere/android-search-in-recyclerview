@@ -1,22 +1,22 @@
 # android-search-in-recyclerview
 
-## AndroidManifest.xml
+### AndroidManifest.xml
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
 
-## build.gradle (app)
+### build.gradle (app)
 ```
 implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 ```
 
-## Beneficiary.kt
+### Beneficiary.kt
 ```java
 data class Beneficiary(val alias: String, val accountNumber: String)
 ```
 
-## IntenseTundraService.kt
+### IntenseTundraService.kt
 ```java
 package com.example.recyclerviewcallapi
 
@@ -30,7 +30,7 @@ interface IntenseTundraService {
 }
 ```
 
-## SimpleAdapter.kt
+### SimpleAdapter.kt
 ```java
 package com.example.recyclerviewcallapi
 
@@ -101,7 +101,7 @@ class SimpleAdapter(
 }
 ```
 
-## MainActivity.kt
+### MainActivity.kt
 
 ```java
 package com.example.recyclerviewcallapi
@@ -181,7 +181,7 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-## res/layout/list_item.xml
+### res/layout/list_item.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -205,7 +205,7 @@ class MainActivity : AppCompatActivity() {
 </LinearLayout>
 ```
 
-## res/menu/menu_search.xml
+### res/menu/menu_search.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
@@ -219,7 +219,7 @@ class MainActivity : AppCompatActivity() {
 </menu>
 ```
 
-## activity_main.xml
+### res/layout/activity_main.xml
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
