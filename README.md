@@ -124,6 +124,20 @@ class SimpleAdapter(
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
+### res/menu/menu_search.xml
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item_search"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+</menu>
+```
+
 ### MainActivity.kt
 
 ```java
@@ -226,18 +240,4 @@ class MainActivity : AppCompatActivity() {
         android:layout_height="wrap_content" />
 
 </LinearLayout>
-```
-
-### res/menu/menu_search.xml
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/menu_item_search"
-        android:title="Search"
-        app:actionViewClass="android.widget.SearchView"
-        app:showAsAction="always" />
-
-</menu>
 ```
